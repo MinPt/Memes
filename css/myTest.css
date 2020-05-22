@@ -1,0 +1,35 @@
+body{
+   background-color: black;
+   color:white;
+}
+
+.bigger-text{
+   font-size: 150%;
+}
+
+.left-cont{
+   width: 15%;
+
+}
+
+.top-cont{
+   height: 30vh;
+}
+
+.navcont{
+   width: 30%;
+}
+
+.card-w{
+   width: 18em;
+   color:black;
+}
+
+.blackclass{
+  background-color: black;
+}
+
+.whiteclass{
+   background-color: white;
+}
+

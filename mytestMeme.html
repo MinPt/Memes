@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/myTest.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <title>Hello, world!</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+        <div class="container navcont">
+            <button id="navbarBtn1" onclick="redclass()" class="btn-danger btn">Button 1</button>
+            <button id="navbarBtn2" class="btn-danger btn">Button 2</button>
+            <button id="navbarBtn3" class="btn-danger btn">Button 3</button>
+            <button id="navbarBtn4" class="btn-danger btn">Button 4</button>
+        </div>
+        <button id="refresh-btn" class="btn-danger btn">Reset</button>
+
+    </div>
+</nav>
+
+
+
+<div id="topdiv" class="">
+<div class="d-flex">
+    <div class="d-flex flex-column left-cont">
+        <div class="container top-cont">
+
+        </div>
+        <div class="container d-flex flex-column align-items-center text-center mycont blocks">
+            <p>Hello</p>
+            <p>My name is Petro</p>
+            <p>I am web developer</p>
+            <p>You can change css styles of any selector you want</p>
+            <ul>
+                <li>
+                    <p>Just write selector name in selector text area</p>
+                </li>
+                <li>
+                    <p>Then write name of property you want to change</p>
+                </li>
+                <li>
+                    <p>And finally in the third input write value of property</p>
+                </li>
+            </ul>
+
+
+
+        </div>
+    </div>
+    <div class="container d-flex">
+        <div class="container d-flex flex-column align-items-center">
+                 <p class="red display-1">
+                        Petro Minailyuk 108
+                </p>
+
+            <ul class="list-group">
+                <li>
+                    <p id="firstP">First</p>
+                </li>
+                <li>
+                    <p id="secondP">Second</p>
+                </li>
+                <li>
+                    <p id="thirdP">Third</p>
+                </li>
+                <li>
+                    <p id="fourthP">Fourth</p>
+                </li>
+                <li>
+                    <p id="fifthP">Fifth</p>
+                </li>
+            </ul>
+
+
+            <div class="container-fluid d-flex justify-content-center">
+                <div class="card mx-4 card-w ">
+                    <div class="card-body d-flex flex-column align-items-center text-center">
+                        <h5 class="card-title">Selector name</h5>
+                        <p class="card-text">Enter name of the selector that you'd change</p>
+                        <input id="input-selector" type="text" class="">
+                    </div>
+                </div>
+                <div class="card mx-4 card-w">
+                    <div class="card-body  d-flex flex-column align-items-center text-center">
+                        <h5 class="card-title">Property name</h5>
+                        <p class="card-text">Enter name of the property you'd change.</p>
+                        <input id="input-property" type="text" class="">
+                    </div>
+                </div>
+                <div class="card mx-4 card-w">
+                    <div class="card-body  d-flex flex-column align-items-center text-center">
+                        <h5 class="card-title">Value</h5>
+                        <p class="card-text">Enter value of property.Be careful. </p>
+                        <input id="input-value" type="text" class="">
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="btn-success display-4 mt-5" id="mybutt">Press Me!</button>
+        </div>
+
+
+
+    </div>
+    <div class="d-flex flex-column left-cont">
+        <div class="container top-cont">
+
+        </div>
+        <div class="container d-flex flex-column align-items-center text-center mycont blocks">
+            <label class="display-4">Table</label>
+           <table class="table-bordered">
+               <tr>
+                   <td>1</td>
+               </tr>
+               <tr>
+                   <td>2</td>
+               </tr>
+               <tr>
+                   <td>3</td>
+               </tr>
+               <tr>
+                   <td>4</td>
+               </tr>
+               <tr>
+                   <td>5</td>
+               </tr>
+               <tr>
+                   <td>6</td>
+               </tr>
+               <tr>
+                   <td>7</td>
+               </tr>
+               <tr>
+                   <td>8</td>
+               </tr>
+               <tr>
+                   <td>9</td>
+               </tr>
+               <tr>
+                   <td>10</td>
+               </tr>
+           </table>
+        </div>
+    </div>
+</div>
+
+</div>
+<!--<form name="myForm" action="" class="container d-flex flex-column align-items-center">
+                    <label class="col-form-label bigger-text">Enter your selector name</label>
+                    <input id="input-selector" type="text" class="input-group-sm">
+                    <label class="col-form-label bigger-text">Enter what you want to change</label>
+                    <input id="input-property" type="text" class="input-group-sm">
+                    <label class="col-form-label bigger-text">Enter value</label>
+                    <input id="input-value" type="text" class="input-group-sm">
+                </form>-->
+
+
+
+
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="script/myTest.js"></script>
+
+
+</body>
+</html>
