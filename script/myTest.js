@@ -29,6 +29,15 @@ $(document).ready(function () {
     });
 
 
+    $("#navbarBtn4").click(function () {
+        $("#mytable tr").filter(function (index) {
+            return (index + 1) % 3 === 0;
+        })
+            .css({"background-color":"blue"});
+    })
+
+
+
 
 });
 

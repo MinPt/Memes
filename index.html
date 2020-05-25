@@ -14,29 +14,31 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+<nav class="navbar fixed-top container-fluid navbar-dark bg-dark sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Logo</a>
-        <div class="container navcont">
-            <button id="navbarBtn1" onclick="redclass()" class="btn-danger btn">Button 1</button>
-            <button id="navbarBtn2" class="btn-danger btn">Button 2</button>
-            <button id="navbarBtn3" class="btn-danger btn">Button 3</button>
-            <button id="navbarBtn4" class="btn-danger btn">Button 4</button>
-        </div>
-        <button id="refresh-btn" class="btn-danger btn">Reset</button>
 
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <div class="navbar-nav mr-auto">
+            <button id="navbarBtn1" class="btn-outline-success btn nav-item">Button 1</button>
+            <button id="navbarBtn2" class="btn-outline-success btn nav-item">Button 2</button>
+            <button id="navbarBtn3" class="btn-outline-success btn nav-item">Button 3</button>
+            <button id="navbarBtn4" class="btn-outline-success btn nav-item">Button 4</button>
+            <button id="navbarBtn5" class="btn-outline-success btn nav-item">Button 5</button>
+        </div>
     </div>
 </nav>
 
 
 
-<div id="topdiv" class="">
-<div class="d-flex">
-    <div class="d-flex flex-column left-cont">
-        <div class="container top-cont">
 
-        </div>
-        <div class="container d-flex flex-column align-items-center text-center mycont blocks">
+<div class="container-fluid d-flex align-items-center row no-gutters">
+    <div class="container-fluid d-flex flex-column col-2 ">
+        <div class="container d-flex flex-column align-items-center text-center blocks">
             <p>Hello</p>
             <p>My name is Petro</p>
             <p>I am web developer</p>
@@ -57,11 +59,17 @@
 
         </div>
     </div>
-    <div class="container d-flex">
-        <div class="container d-flex flex-column align-items-center">
-                 <p class="red display-1">
-                        Petro Minailyuk 108
-                </p>
+    <div class="container d-flex m-2">
+        <div class="container-fluid d-flex flex-column align-items-center">
+                 <h1 class="red" id="Petro">
+                        Petro
+                </h1>
+            <h2>
+                Minailyuk
+            </h2>
+            <h3>
+                108
+            </h3>
 
             <ul class="list-group">
                 <li>
@@ -82,22 +90,22 @@
             </ul>
 
 
-            <div class="container-fluid d-flex justify-content-center">
-                <div class="card mx-4 card-w ">
+            <div class="container-fluid d-flex justify-content-center row">
+                <div class="card mx-4 card-w col-lg">
                     <div class="card-body d-flex flex-column align-items-center text-center">
                         <h5 class="card-title">Selector name</h5>
                         <p class="card-text">Enter name of the selector that you'd change</p>
                         <input id="input-selector" type="text" class="">
                     </div>
                 </div>
-                <div class="card mx-4 card-w">
+                <div class="card mx-4 card-w col-lg">
                     <div class="card-body  d-flex flex-column align-items-center text-center">
                         <h5 class="card-title">Property name</h5>
                         <p class="card-text">Enter name of the property you'd change.</p>
                         <input id="input-property" type="text" class="">
                     </div>
                 </div>
-                <div class="card mx-4 card-w">
+                <div class="card mx-4 card-w col-lg" >
                     <div class="card-body  d-flex flex-column align-items-center text-center">
                         <h5 class="card-title">Value</h5>
                         <p class="card-text">Enter value of property.Be careful. </p>
@@ -113,13 +121,10 @@
 
 
     </div>
-    <div class="d-flex flex-column left-cont">
-        <div class="container top-cont">
-
-        </div>
-        <div class="container d-flex flex-column align-items-center text-center mycont blocks">
+    <div class="container-fluid d-flex flex-column col-2 ">
+        <div class="container d-flex flex-column align-items-center text-center blocks">
             <label class="display-4">Table</label>
-           <table class="table-bordered">
+           <table class="table-bordered" id = "mytable">
                <tr>
                    <td>1</td>
                </tr>
@@ -155,15 +160,8 @@
     </div>
 </div>
 
-</div>
-<!--<form name="myForm" action="" class="container d-flex flex-column align-items-center">
-                    <label class="col-form-label bigger-text">Enter your selector name</label>
-                    <input id="input-selector" type="text" class="input-group-sm">
-                    <label class="col-form-label bigger-text">Enter what you want to change</label>
-                    <input id="input-property" type="text" class="input-group-sm">
-                    <label class="col-form-label bigger-text">Enter value</label>
-                    <input id="input-value" type="text" class="input-group-sm">
-                </form>-->
+
+
 
 
 
