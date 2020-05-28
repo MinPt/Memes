@@ -36,8 +36,25 @@ $(document).ready(function () {
             .css({"background-color":"blue"});
     })
 
+    $("#navbarBtn5").click(function () {
+        $("*:not(.green,#blue)").css({"border":"2px solid red"});
+    })
 
 
+    $("#navbarBtn6").click(function(){
+        $("div:contains(p)").css({"background-color":"red"});
+    })
+
+    $("#navbarBtn").click(function () {
+
+    })
+    $("input:odd").attr("checked","checked");
+
+    $("#dialogBtn").click(function () {
+        $("#mainWindow").append(`<div class='m-0'>${moment().format('HH:mm:ss')} - ${$("#myTextArea").val()} <div>`);
+
+        $("#myTextArea").val(" ");
+    })
 
 });
 
